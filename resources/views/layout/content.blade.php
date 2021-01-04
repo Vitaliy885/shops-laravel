@@ -1,4 +1,4 @@
 <main class="container">
     @yield('content')
-    @include('components.sidebar')
+    {{--@include('components.sidebar')--}}
 </main>
