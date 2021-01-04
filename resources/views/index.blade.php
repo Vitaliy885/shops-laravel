@@ -14,6 +14,9 @@
 </head>
 <body>
 @include('layout.header')
+@if(Request::is('/'))
+    @include('components.slider')
+@endif
 @include('layout.content')
 @include('layout.footer')
 </body>

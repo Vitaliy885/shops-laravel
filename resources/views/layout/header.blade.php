@@ -5,9 +5,9 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{asset('/')}}">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{asset('/')}}">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{asset('about')}}">About</a>
@@ -18,5 +18,4 @@
             </ul>
         </div>
     </nav>
-
 </header>
