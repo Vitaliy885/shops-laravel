@@ -10,6 +10,9 @@
                     <a class="nav-link" href="{{ route('/') }}">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{ route('contact-data') }}">Messages</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('about') }}">About</a>
                 </li>
                 <li class="nav-item">

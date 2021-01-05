@@ -23,4 +23,9 @@ class ContactController extends Controller
 
     }
 
+    public function allData(){
+        $contact = new Contact();
+        return view('pages.messages', [ 'data' => $contact->orderBy('id','DESC')->get()] );
+    }
+
 }
