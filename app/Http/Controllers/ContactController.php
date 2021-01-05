@@ -3,16 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\ContactRequest;
+use App\Models\Contact;
+
 
 class ContactController extends Controller
 {
 
-    public function submit(Request $req){
-       $validation = $req->validate([
-           'name' => 'required|min:5|max:20',
-           'surname' => 'required|min:3|max:20',
-           'text' => 'required|min:10|max:255'
-       ]);
+    public function submit(ContactRequest $req){
+
+        $contact = new Contact();
+        $contact->name = $req->input('name');
+        $contact->surname = $req->input('surname');
+        $contact->message = $req->input('text');
+
+        $contact->save();
+
+        return redirect()->route('contact')->with('success', 'Сообщение было добавлено');
+
     }
 
 }
