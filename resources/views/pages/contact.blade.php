@@ -4,26 +4,30 @@
 
 @section('content')
     <h1>Contact</h1>
-    <form action="/contact/submit" method="post">
+
+    @if($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
+    <form action="{{ route('contact-form') }}" method="post">
+        @csrf
         <div class="form-group">
-            <label for="exampleInputName1">Name</label>
-            <input type="password" class="form-control" id="exampleInputName1" placeholder="Name">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <label>Name</label>
+            <input type="text" name="name" class="form-control"  placeholder="Name">
         </div>
         <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <label>Surname</label>
+            <input type="text" name="surname" class="form-control"  aria-describedby="TermHelp" placeholder="Surname">
         </div>
         <div class="form-group">
-            <label for="exampleInputTerm1">Term</label>
-            <input type="email" class="form-control" id="exampleInputTerm1" aria-describedby="TermHelp" placeholder="Term">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-            <label for="exampleInputText1">Text</label>
-            <input type="email" class="form-control" id="exampleInputText1" aria-describedby="TextHelp" placeholder="Text">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <label>Text</label>
+            <input type="text" name="text" class="form-control" aria-describedby="TextHelp" placeholder="Text">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
