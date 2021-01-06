@@ -10,7 +10,7 @@
         <div class="alert alert-info">
             <h4>{{ $el->name }} {{ $el->surname }}</h4>
             <p>{{ $el->message }}</p>
-            <a href="" class="btn btn-warning">Detail</a>
+            <a href="{{ route('contact-data-message', $el->id) }}" class="btn btn-warning">Detail</a>
         </div>
     @endforeach
 

@@ -28,4 +28,9 @@ class ContactController extends Controller
         return view('pages.messages', [ 'data' => $contact->orderBy('id','DESC')->get()] );
     }
 
+    public function showMessage($id){
+        $contact = new Contact();
+        return view('pages.show-message', [ 'data' => $contact->find($id)] );
+    }
+
 }
