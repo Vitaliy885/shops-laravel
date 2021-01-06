@@ -33,6 +33,11 @@ class ContactController extends Controller
         return view('pages.show-message', [ 'data' => $contact->find($id)] );
     }
 
+    public function deleteMessage($id){
+        Contact::find($id)->delete();
+        return redirect()->route('contact-data')->with('success', 'Сообщение было удалено');
+    }
+
     public function updateMessage($id){
         $contact = new Contact();
         return view('pages.update-message', [ 'data' => $contact->find($id)] );
