@@ -33,4 +33,20 @@ class ContactController extends Controller
         return view('pages.show-message', [ 'data' => $contact->find($id)] );
     }
 
+    public function updateMessage($id){
+        $contact = new Contact();
+        return view('pages.update-message', [ 'data' => $contact->find($id)] );
+    }
+
+    public function updateMessageSubmit($id, ContactRequest $req){
+        $contact = Contact::find($id);
+        $contact->name = $req->input('name');
+        $contact->surname = $req->input('surname');
+        $contact->message = $req->input('text');
+
+        $contact->save();
+
+        return redirect()->route('contact-data-message', $id)->with('success', 'Сообщение было обновлено');
+    }
+
 }
