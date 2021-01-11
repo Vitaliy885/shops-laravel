@@ -30,6 +30,8 @@
 
             .main-menu {
                 & ul {
+                    margin-bottom: 0;
+
                     & li {
                         display: inline-block;
                         position: relative;
@@ -37,7 +39,7 @@
 
                         & a {
                             font-size: 16px;
-                            font-family:  $font_1;
+                            font-family: $font_1;
                             color: #141517;
                             font-weight: 600;
                             padding: 41px 21px;

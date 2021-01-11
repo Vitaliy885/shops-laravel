@@ -126,6 +126,10 @@
   align-items: center;
 }
 
+.header-area .main-header .menu-wrapper .main-menu ul {
+  margin-bottom: 0;
+}
+
 .header-area .main-header .menu-wrapper .main-menu ul li {
   display: inline-block;
   position: relative;

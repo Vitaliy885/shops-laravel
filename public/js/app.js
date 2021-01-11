@@ -19435,6 +19435,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/footer.scss":
+/*!************************************!*\
+  !*** ./resources/sass/footer.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/header.scss":
 /*!************************************!*\
   !*** ./resources/sass/header.scss ***!
@@ -19446,17 +19457,30 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/slider.scss":
+/*!************************************!*\
+  !*** ./resources/sass/slider.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!***********************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/header.scss ./resources/sass/common.scss ***!
-  \***********************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/header.scss ./resources/sass/common.scss ./resources/sass/slider.scss ./resources/sass/footer.scss ***!
+  \*********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! D:\OSPanel\domains\beta\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! D:\OSPanel\domains\beta\resources\sass\app.scss */"./resources/sass/app.scss");
 __webpack_require__(/*! D:\OSPanel\domains\beta\resources\sass\header.scss */"./resources/sass/header.scss");
-module.exports = __webpack_require__(/*! D:\OSPanel\domains\beta\resources\sass\common.scss */"./resources/sass/common.scss");
+__webpack_require__(/*! D:\OSPanel\domains\beta\resources\sass\common.scss */"./resources/sass/common.scss");
+__webpack_require__(/*! D:\OSPanel\domains\beta\resources\sass\slider.scss */"./resources/sass/slider.scss");
+module.exports = __webpack_require__(/*! D:\OSPanel\domains\beta\resources\sass\footer.scss */"./resources/sass/footer.scss");
 
 
 /***/ })
