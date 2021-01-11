@@ -240,6 +240,21 @@
   }
 }
 
+.slider-area .hero-btn {
+  border-radius: unset;
+  border: none;
+  padding: 15px 30px;
+  border-color: #4a4a4b;
+}
+
+.slider-area .hero-btn:focus {
+  box-shadow: none;
+}
+
+.slider-area .hero-btn:hover {
+  color: #ffffff;
+}
+
 .slider-area .hero-cap h2 {
   font-size: 70px;
   font-weight: 700;

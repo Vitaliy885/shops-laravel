@@ -18,6 +18,7 @@ mix.react('resources/js/app.js', 'public/js')
     .sass('resources/sass/common.scss', 'public/css')
     .sass('resources/sass/slider.scss', 'public/css')
     .sass('resources/sass/footer.scss', 'public/css')
+    .sass('resources/sass/home.scss', 'public/css')
     .copy('resources/images', 'public/images')
     .copy('resources/fonts', 'public/fonts')
     .copy('resources/js/slick.min.js', 'public/js')
@@ -35,6 +36,9 @@ mix.then(() => {
 });
 mix.then(() => {
     minifier.minify('public/css/footer.css')
+});
+mix.then(() => {
+    minifier.minify('public/css/home.css')
 });
 mix.then(() => {
     minifier.minify('public/css/common.css')

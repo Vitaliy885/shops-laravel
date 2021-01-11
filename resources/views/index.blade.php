@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/header.min.css">
     <link rel="stylesheet" href="/css/footer.min.css">
     <link rel="stylesheet" href="/css/app.min.css">
+    <link rel="stylesheet" href="/css/home.min.css">
     <link rel="stylesheet" href="/css/common.min.css">
     <link rel="stylesheet" href="/css/slider.min.css">
     <link rel="stylesheet" href="/css/flaticon.css">

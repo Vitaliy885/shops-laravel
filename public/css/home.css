@@ -1,0 +1,135 @@
+/*------------------- Responsive --------------------------*/
+
+/*-------------   Color variabel  --------------*/
+
+.white-bg {
+  background: #ffffff;
+}
+
+.gray-bg {
+  background: #f5f5f5;
+}
+
+/*-------------Color include--------------*/
+
+/*-- Background color---*/
+
+.gray-bg {
+  background: #f7f7fd;
+}
+
+.white-bg {
+  background: #ffffff;
+}
+
+.black-bg {
+  background: #16161a;
+}
+
+.theme-bg {
+  background: #ff2020;
+}
+
+.brand-bg {
+  background: #f1f4fa;
+}
+
+.testimonial-bg {
+  background: #f9fafc;
+}
+
+/*--- color------*/
+
+.white-color {
+  color: #ffffff;
+}
+
+.black-color {
+  color: #16161a;
+}
+
+.theme-color {
+  color: #ff2020;
+}
+
+.boxed-btn {
+  background: #fff;
+  color: #fff !important;
+  display: inline-block;
+  padding: 18px 44px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  border: 1px solid #ff2020;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.boxed-btn:hover {
+  background: #ff2020;
+  color: #000 !important;
+  border: 1px solid #ff2020;
+}
+
+.boxed-btn:focus {
+  outline: none;
+}
+
+.boxed-btn.large-width {
+  width: 220px;
+}
+
+/*Color Variables*/
+
+.single-new-pro .product-img {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.single-new-pro .product-img img {
+  width: 100%;
+  transform: scale(1);
+  transition: all ease-in-out 0.4s;
+}
+
+.single-new-pro .product-caption h3 a {
+  color: #444444;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .single-new-pro .product-caption h3 a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .single-new-pro .product-caption h3 a {
+    font-size: 20px;
+  }
+}
+
+.single-new-pro .product-caption span {
+  color: #ff2020;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+}
+
+.single-new-pro:hover .product-img img {
+  transform: scale(1.04);
+}
+
+.section-tittle h2 {
+  color: #000;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  font-family: "Josefin Sans", sans-serif;
+}
+
