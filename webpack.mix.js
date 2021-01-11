@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const minifier = require('minifier');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +12,19 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.react('resources/js/app.js', 'public/js')
+    .sass('resources/sass/app.scss', 'public/css')
+    .sass('resources/sass/header.scss', 'public/css')
+    .sass('resources/sass/common.scss', 'public/css')
+    .copy('resources/images', 'public/images')
+    .copy('resources/fonts', 'public/fonts')
+
+mix.then(() => {
+    minifier.minify('public/css/app.css')
+});
+mix.then(() => {
+    minifier.minify('public/css/header.css')
+});
+mix.then(() => {
+    minifier.minify('public/css/common.css')
+});
