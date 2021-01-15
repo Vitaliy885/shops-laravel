@@ -2735,3 +2735,11 @@ input:focus {
   background-position: center center !important;
 }
 
+.popular-items-category #select1 {
+  padding: 3px 10px;
+}
+
+.popular-items-category #select1:focus {
+  outline: none;
+}
+

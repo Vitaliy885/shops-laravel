@@ -1245,3 +1245,13 @@ input:focus {
     background-repeat: no-repeat !important;
     background-position: center center !important;
 }
+
+.popular-items-category {
+    #select1 {
+        padding: 3px 10px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

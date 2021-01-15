@@ -5,11 +5,10 @@
     "/css/common.css": "/css/common.css",
     "/css/slider.css": "/css/slider.css",
     "/css/footer.css": "/css/footer.css",
+    "/css/category.css": "/css/category.css",
     "/css/home.css": "/css/home.css",
     "/js/slick.min.js": "/js/slick.min.js",
     "/js/jquery.slicknav.min.js": "/js/jquery.slicknav.min.js",
-    "/js/jquery.nice-select.min.js": "/js/jquery.nice-select.min.js",
-    "/js/jquery.scrollUp.min.js": "/js/jquery.scrollUp.min.js",
-    "/js/jquery.sticky.js": "/js/jquery.sticky.js",
-    "/js/jquery-2.2.4.min.js": "/js/jquery-2.2.4.min.js"
+    "/js/jquery-2.2.4.min.js": "/js/jquery-2.2.4.min.js",
+    "/css/about.css": "/css/about.css"
 }

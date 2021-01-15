@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/css/app.min.css">
     <link rel="stylesheet" href="/css/home.min.css">
     <link rel="stylesheet" href="/css/common.min.css">
+    <link rel="stylesheet" href="/css/category.min.css">
+    <link rel="stylesheet" href="/css/about.min.css">
     <link rel="stylesheet" href="/css/slider.min.css">
     <link rel="stylesheet" href="/css/flaticon.css">
     <link rel="stylesheet" href="/css/fontawesome-all.min.css">

@@ -210,26 +210,7 @@
         </div>
     </div>
     <!-- Popular Items End -->
-    <!--? Video Area Start -->
-    <div class="video-area">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="video-wrap">
-                        <div class="play-btn "><a class="popup-video" href="https://www.youtube.com/watch?v=KMc6DyEJp04"><i class="fas fa-play"></i></a></div>
-                    </div>
-                </div>
-            </div>
-            <!-- Arrow -->
-            <div class="thumb-content-box">
-                <div class="thumb-content">
-                    <h3>Next Video</h3>
-                    <a href="#"> <i class="flaticon-arrow"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Area End -->
+    @include('components.video-area')
     <!--? Watch Choice  Start-->
     <div class="watch-area section-padding30">
         <div class="container">
@@ -264,35 +245,5 @@
         </div>
     </div>
     <!-- Watch Choice  End-->
-    <!--? Shop Method Start-->
-    <div class="shop-method-area">
-        <div class="container">
-            <div class="method-wrapper">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-method mb-40">
-                            <i class="fas fa-truck" style="transform: scale(-1, 1);text-align: right;"></i>
-                            <h6>Free Shipping Method</h6>
-                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-method mb-40">
-                            <i class="fas fa-lock"></i>
-                            <h6>Secure Payment System</h6>
-                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-method mb-40">
-                            <i class="far fa-credit-card"></i>
-                            <h6>Secure Payment System</h6>
-                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Shop Method End-->
+    @include('components.shop-method-area')
 @endsection
