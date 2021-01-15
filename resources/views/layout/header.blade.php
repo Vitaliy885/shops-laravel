@@ -1,22 +1,9 @@
 <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{{asset('/')}}">Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{ route('/') }}">Home<span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('contact-data') }}">Messages</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('about') }}">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('contact') }}">Contact</a>
                 </li>
             </ul>
         </div>
@@ -44,15 +31,15 @@
                 <div class="menu-wrapper">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="/images/logo.png" alt=""></a>
+                        <a href="{{ route('/') }}"><img src="/images/logo.png" alt=""></a>
                     </div>
                     <!-- Main-menu -->
                     <div class="main-menu d-none d-lg-block">
                         <nav>
                             <ul id="navigation">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="shop.html">shop</a></li>
-                                <li><a href="about.html">about</a></li>
+                                <li><a href="{{ route('/') }}">Home</a></li>
+                                <li><a href="{{ route('category') }}">shop</a></li>
+                                <li><a href="{{ route('about') }}">about</a></li>
                                 <li class="hot"><a href="#">Latest</a>
                                     <ul class="submenu">
                                         <li><a href="shop.html"> Product list</a></li>
@@ -74,7 +61,7 @@
                                         <li><a href="checkout.html">Product Checkout</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="{{ route('contact') }}">Contact</a></li>
                             </ul>
                         </nav>
                     </div>

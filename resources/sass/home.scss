@@ -452,6 +452,20 @@
                 font-size: 16px;
             }
         }
+
+        .btn {
+            border-radius: 0 !important;
+            padding: 18px 28px;
+
+            &:active {
+                box-shadow: none;
+            }
+
+            &:hover {
+                color: #ffffff;
+                background: none;
+            }
+        }
     }
 
     .choice-watch-img {
@@ -477,6 +491,33 @@
     }
 }
 
+// shop-method-area
+.shop-method-area{
+    .method-wrapper{
+        background: #ea0000;
+        .single-method{
+            padding: 43px 20px 0 45px;
+            i{
+                font-size: 40px;
+                color:#ffff;
+                margin-bottom: 25px;
+                display: block;
+            }
+            h6{
+                color:#fff;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 1.2;
+                margin-bottom: 12px;
+                font-family: $font_2;
+            }
+            p{
+                font-size: 16px;
+                color:#d3d1d1;
+            }
+        }
+    }
+}
 
 
 

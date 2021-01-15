@@ -230,4 +230,69 @@
         </div>
     </div>
     <!-- Video Area End -->
+    <!--? Watch Choice  Start-->
+    <div class="watch-area section-padding30">
+        <div class="container">
+            <div class="row align-items-center justify-content-between padding-130">
+                <div class="col-lg-5 col-md-6">
+                    <div class="watch-details mb-40">
+                        <h2>Watch of Choice</h2>
+                        <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        <a href="shop.html" class="btn">Show Watches</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-10">
+                    <div class="choice-watch-img mb-40">
+                        <img src="images/gallery/choce_watch1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6 col-md-6 col-sm-10">
+                    <div class="choice-watch-img mb-40">
+                        <img src="images/gallery/choce_watch2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <div class="watch-details mb-40">
+                        <h2>Watch of Choice</h2>
+                        <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        <a href="shop.html" class="btn">Show Watches</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Watch Choice  End-->
+    <!--? Shop Method Start-->
+    <div class="shop-method-area">
+        <div class="container">
+            <div class="method-wrapper">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-method mb-40">
+                            <i class="fas fa-truck" style="transform: scale(-1, 1);text-align: right;"></i>
+                            <h6>Free Shipping Method</h6>
+                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-method mb-40">
+                            <i class="fas fa-lock"></i>
+                            <h6>Secure Payment System</h6>
+                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-method mb-40">
+                            <i class="far fa-credit-card"></i>
+                            <h6>Secure Payment System</h6>
+                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shop Method End-->
 @endsection
