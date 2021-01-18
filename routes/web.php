@@ -11,6 +11,10 @@ Route::get('/category', function () {
     return view('pages.category');
 })->name('category');
 
+Route::get('/product', function () {
+    return view('pages.product');
+})->name('product');
+
 Route::get('/about', function () {
     return view('pages.about');
 })->name('about');

@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="/css/common.min.css">
     <link rel="stylesheet" href="/css/category.min.css">
     <link rel="stylesheet" href="/css/about.min.css">
+    <link rel="stylesheet" href="/css/product.min.css">
     <link rel="stylesheet" href="/css/slider.min.css">
     <link rel="stylesheet" href="/css/flaticon.css">
     <link rel="stylesheet" href="/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/slick.css">
     <link rel="stylesheet" href="/css/slicknav.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">

@@ -7,8 +7,10 @@
     "/css/footer.css": "/css/footer.css",
     "/css/category.css": "/css/category.css",
     "/css/home.css": "/css/home.css",
+    "/css/product.css": "/css/product.css",
+    "/css/about.css": "/css/about.css",
     "/js/slick.min.js": "/js/slick.min.js",
     "/js/jquery.slicknav.min.js": "/js/jquery.slicknav.min.js",
     "/js/jquery-2.2.4.min.js": "/js/jquery-2.2.4.min.js",
-    "/css/about.css": "/css/about.css"
+    "/js/owl.carousel.min.js": "/js/owl.carousel.min.js"
 }

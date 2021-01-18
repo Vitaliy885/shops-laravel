@@ -36,9 +36,6 @@
                     </nav>
                     <!--End Nav Button  -->
                 </div>
-                <!-- Grid and List view -->
-                <div class="grid-list-view">
-                </div>
                 <!-- Select items -->
                 <div class="select-this">
                     <form action="#">
@@ -59,7 +56,7 @@
                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div class="row">
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                            <div class="single-popular-items mb-50 text-center">
+                            <a href="{{ asset('/product') }}" class="single-popular-items mb-50 text-center">
                                 <div class="popular-img">
                                     <img src="images/gallery/popular1.png" alt="">
                                     <div class="img-cap">
@@ -73,10 +70,10 @@
                                     <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
                                     <span>$ 45,743</span>
                                 </div>
-                            </div>
+                            <a/>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                            <div class="single-popular-items mb-50 text-center">
+                            <a href="{{ asset('/product') }}" class="single-popular-items mb-50 text-center">
                                 <div class="popular-img">
                                     <img src="images/gallery/popular2.png" alt="">
                                     <div class="img-cap">
@@ -90,10 +87,10 @@
                                     <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
                                     <span>$ 45,743</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                            <div class="single-popular-items mb-50 text-center">
+                            <a href="{{ asset('/product') }}" class="single-popular-items mb-50 text-center">
                                 <div class="popular-img">
                                     <img src="images/gallery/popular3.png" alt="">
                                     <div class="img-cap">
@@ -107,7 +104,7 @@
                                     <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
                                     <span>$ 45,743</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                             <div class="single-popular-items mb-50 text-center">
