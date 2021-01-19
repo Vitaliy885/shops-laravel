@@ -1,6 +1,9 @@
 @extends('index')
 
 @section('title') Shops @endsection
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('/css/category.min.css') }}">
+@endpush
 
 @section('content')
     <!-- Hero Area Start-->

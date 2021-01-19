@@ -13,7 +13,6 @@ const minifier = require('minifier');
  */
 
 mix.react('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
     .sass('resources/sass/header.scss', 'public/css')
     .sass('resources/sass/common.scss', 'public/css')
     .sass('resources/sass/slider.scss', 'public/css')
@@ -29,9 +28,6 @@ mix.react('resources/js/app.js', 'public/js')
     .copy('resources/js/jquery-2.2.4.min.js', 'public/js')
     .copy('resources/js/owl.carousel.min.js', 'public/js')
 
-mix.then(() => {
-    minifier.minify('public/css/app.css')
-});
 mix.then(() => {
     minifier.minify('public/css/header.css')
 });

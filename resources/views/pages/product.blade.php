@@ -1,7 +1,10 @@
 @extends('index')
 
 @section('title') Product @endsection
-
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('/css/product.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/owl.carousel.min.css') }}">
+@endpush
 @section('content')
 
     <!-- Hero Area Start-->
@@ -41,14 +44,20 @@
                         <h3>Foam filling cotton slow <br>
                             rebound pillows</h3>
                         <p>
-                            Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources. Credibly innovate granular internal or “organic” sources whereas high standards in web-readiness. Credibly innovate granular internal or organic sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas. with optimal networks.
+                            Seamlessly empower fully researched growth strategies and interoperable internal or
+                            “organic” sources. Credibly innovate granular internal or “organic” sources whereas high
+                            standards in web-readiness. Credibly innovate granular internal or organic sources whereas
+                            high standards in web-readiness. Energistically scale future-proof core competencies
+                            vis-a-vis impactful experiences. Dramatically synthesize integrated schemas. with optimal
+                            networks.
                         </p>
                         <div class="card_area">
                             <div class="product_count_area">
                                 <p>Quantity</p>
                                 <div class="product_count d-inline-block">
                                     <span class="product_count_item inumber-decrement"> <i class="ti-minus"></i></span>
-                                    <input class="product_count_item input-number" type="text" value="1" min="0" max="10">
+                                    <input class="product_count_item input-number" type="text" value="1" min="0"
+                                           max="10">
                                     <span class="product_count_item number-increment"> <i class="ti-plus"></i></span>
                                 </div>
                                 <p>$5</p>
@@ -70,7 +79,8 @@
                 <div class="col-lg-8">
                     <div class="subscribe_part_content">
                         <h2>Get promotions & updates!</h2>
-                        <p>Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources credibly innovate granular internal .</p>
+                        <p>Seamlessly empower fully researched growth strategies and interoperable internal or “organic”
+                            sources credibly innovate granular internal .</p>
                         <div class="subscribe_form">
                             <input type="email" placeholder="Enter your mail">
                             <a href="#" class="btn_1">Subscribe</a>
@@ -81,7 +91,7 @@
         </div>
     </section>
     <!-- subscribe part end -->
-
+    <br><br>
     @include('components.shop-method-area')
 
 @endsection

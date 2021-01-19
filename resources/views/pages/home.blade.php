@@ -1,6 +1,10 @@
 @extends('index')
 
 @section('title')Home @endsection
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('/css/slick.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/slider.min.css') }}">
+@endpush
 
 @section('content')
     <!-- ? New Product Start -->
