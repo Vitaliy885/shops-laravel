@@ -251,3 +251,7 @@
     <!-- Watch Choice  End-->
     @include('components.shop-method-area')
 @endsection
+
+@push('scripts')
+    <script src="{{ asset('js/slick.min.js') }}"></script>
+@endpush
