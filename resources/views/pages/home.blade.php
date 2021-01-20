@@ -4,6 +4,7 @@
 @push('styles')
     <link rel="stylesheet" href="{{ asset('/css/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/slider.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/animate.min.css') }}">
 @endpush
 
 @section('content')
@@ -62,24 +63,28 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-4 col-md-6 col-sm-6">
                     <div class="single-gallery mb-30">
-                        <div class="gallery-img big-img" style="background-image: url('/images/gallery/gallery1.png');"></div>
+                        <div class="gallery-img big-img"
+                             style="background-image: url('/images/gallery/gallery1.png');"></div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <div class="single-gallery mb-30">
-                        <div class="gallery-img big-img" style="background-image: url('/images/gallery/gallery2.png');"></div>
+                        <div class="gallery-img big-img"
+                             style="background-image: url('/images/gallery/gallery2.png');"></div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-12">
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6">
                             <div class="single-gallery mb-30">
-                                <div class="gallery-img small-img" style="background-image: url('/images/gallery/gallery3.png');"></div>
+                                <div class="gallery-img small-img"
+                                     style="background-image: url('/images/gallery/gallery3.png');"></div>
                             </div>
                         </div>
                         <div class="col-xl-12 col-lg-12  col-md-6 col-sm-6">
                             <div class="single-gallery mb-30">
-                                <div class="gallery-img small-img" style="background-image: url('/images/gallery/gallery4.png');"></div>
+                                <div class="gallery-img small-img"
+                                     style="background-image: url('/images/gallery/gallery4.png');"></div>
                             </div>
                         </div>
                     </div>
@@ -97,7 +102,8 @@
                 <div class="col-xl-7 col-lg-8 col-md-10">
                     <div class="section-tittle mb-70 text-center">
                         <h2>Popular Items</h2>
-                        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Quis ipsum suspendisse ultrices gravida.</p>
                     </div>
                 </div>
             </div>
@@ -222,7 +228,8 @@
                 <div class="col-lg-5 col-md-6">
                     <div class="watch-details mb-40">
                         <h2>Watch of Choice</h2>
-                        <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
                         <a href="shop.html" class="btn">Show Watches</a>
                     </div>
                 </div>
@@ -241,7 +248,8 @@
                 <div class="col-lg-5 col-md-6">
                     <div class="watch-details mb-40">
                         <h2>Watch of Choice</h2>
-                        <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
                         <a href="shop.html" class="btn">Show Watches</a>
                     </div>
                 </div>
@@ -254,4 +262,69 @@
 
 @push('scripts')
     <script src="{{ asset('js/slick.min.js') }}"></script>
+    <script>
+        function mainSlider() {
+            var BasicSlider = $('.slider-active');
+            BasicSlider.on('init', function (e, slick) {
+                var $firstAnimatingElements = $('.single-slider:first-child').find('[data-animation]');
+                doAnimations($firstAnimatingElements);
+            });
+            BasicSlider.on('beforeChange', function (e, slick, currentSlide, nextSlide) {
+                var $animatingElements = $('.single-slider[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
+                doAnimations($animatingElements);
+            });
+            BasicSlider.slick({
+                autoplay: true,
+                autoplaySpeed: 7000,
+                dots: false,
+                fade: true,
+                arrows: false,
+                prevArrow: '<button type="button" class="slick-prev"><i class="ti-shift-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="ti-shift-right"></i></button>',
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                },
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false
+                        }
+                    }
+                ]
+            });
+
+            function doAnimations(elements) {
+                var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                elements.each(function () {
+                    var $this = $(this);
+                    var $animationDelay = $this.data('delay');
+                    var $animationType = 'animated ' + $this.data('animation');
+                    $this.css({
+                        'animation-delay': $animationDelay,
+                        '-webkit-animation-delay': $animationDelay
+                    });
+                    $this.addClass($animationType).one(animationEndEvents, function () {
+                        $this.removeClass($animationType);
+                    });
+                });
+            }
+        }
+
+        mainSlider();
+    </script>
 @endpush

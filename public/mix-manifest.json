@@ -11,5 +11,8 @@
     "/js/slick.min.js": "/js/slick.min.js",
     "/js/jquery.slicknav.min.js": "/js/jquery.slicknav.min.js",
     "/js/jquery-2.2.4.min.js": "/js/jquery-2.2.4.min.js",
-    "/js/owl.carousel.min.js": "/js/owl.carousel.min.js"
+    "/js/owl.carousel.min.js": "/js/owl.carousel.min.js",
+    "/js/animated.headline.js": "/js/animated.headline.js",
+    "/js/jquery.magnific-popup.js": "/js/jquery.magnific-popup.js",
+    "/js/wow.min.js": "/js/wow.min.js"
 }

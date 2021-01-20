@@ -12,7 +12,6 @@
         .owl-next {
             width: 40px;
             height: 40px;
-            font-size: 14px;
             line-height: 40px;
             border-radius: 50%;
             border: 1px solid #E4D3DF;
@@ -60,6 +59,104 @@
             margin-top: 50px;
         }
     }
+
+    .add_to_cart {
+        margin-top: 60px;
+
+        a {
+            display: inline-block;
+            padding: 18px 36px;
+            border-radius: 5px;
+            background-color: transparent;
+            border: 1px solid $primary-color;
+            color: $primary-color;
+            text-transform: uppercase;
+            font-weight: 400;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                background-color: $primary-color;
+                color: #ffffff;
+            }
+        }
+    }
+
+    .product_attributes_area {
+        margin-top: 50px;
+
+        .characteristics-title {
+            font-family: $font_1;
+        }
+
+        .attribute-list {
+            padding: 0;
+            margin: 0;
+            border: 0;
+
+            .attribute__group {
+                padding: 5px 10px;
+                margin-top: 10px;
+                margin-bottom: 1px;
+                color: #000000;
+                display: table;
+                font-size: 14px;
+                @media (max-width: 455px) {
+                    padding: 5px 0px;
+                }
+
+                .attribute__group-name {
+                    font-family: $font_2;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: #122853;
+                }
+            }
+
+            .attribute-item {
+                display: table;
+                width: 100%;
+                vertical-align: middle;
+                padding: 7px 10px;
+                font-size: 15px;
+                margin-left: 10px;
+                text-align: left;
+                @media (max-width: 768px) {
+                    margin-left: unset;
+                }
+                @media (max-width: 455px) {
+                    font-size: 14px;
+                    padding: 7px 5px;
+                }
+
+                &:nth-child(even) {
+                    background-color: rgba($primary-color, 0.1);
+
+                    &:hover {
+                        background-color: rgba($primary-color, 0.2);
+                    }
+                }
+
+                .attribute__name {
+                    display: table-cell;
+                    width: 40%;
+                    vertical-align: middle;
+                    @media (max-width: 455px) {
+                        width: 50%;
+                    }
+                }
+
+                .attribute__value {
+                    display: table-cell;
+                    width: 60%;
+                    vertical-align: middle;
+                    @media (max-width: 455px) {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 .subscribe_part {

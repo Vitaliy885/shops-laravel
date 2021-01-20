@@ -3,6 +3,7 @@
 @section('title') Shops @endsection
 @push('styles')
     <link rel="stylesheet" href="{{ asset('/css/category.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/slider.min.css') }}">
 @endpush
 
 @section('content')

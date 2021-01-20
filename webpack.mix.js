@@ -27,6 +27,9 @@ mix.react('resources/js/app.js', 'public/js')
     .copy('resources/js/jquery.slicknav.min.js', 'public/js')
     .copy('resources/js/jquery-2.2.4.min.js', 'public/js')
     .copy('resources/js/owl.carousel.min.js', 'public/js')
+    .copy('resources/js/animated.headline.js', 'public/js')
+    .copy('resources/js/jquery.magnific-popup.js', 'public/js')
+    .copy('resources/js/wow.min.js', 'public/js')
 
 mix.then(() => {
     minifier.minify('public/css/header.css')
