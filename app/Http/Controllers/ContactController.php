@@ -16,6 +16,7 @@ class ContactController extends Controller
         $contact->name = $req->input('name');
         $contact->surname = $req->input('surname');
         $contact->message = $req->input('text');
+        $contact->email = $req->input('email');
 
         $contact->save();
 

@@ -21,6 +21,7 @@ mix.react('resources/js/app.js', 'public/js')
     .sass('resources/sass/home.scss', 'public/css')
     .sass('resources/sass/product.scss', 'public/css')
     .sass('resources/sass/about.scss', 'public/css')
+    .sass('resources/sass/contact.scss', 'public/css')
     .copy('resources/images', 'public/images')
     .copy('resources/fonts', 'public/fonts')
     .copy('resources/js/slick.min.js', 'public/js')
@@ -51,6 +52,9 @@ mix.then(() => {
 });
 mix.then(() => {
     minifier.minify('public/css/category.css')
+});
+mix.then(() => {
+    minifier.minify('public/css/contact.css')
 });
 mix.then(() => {
     minifier.minify('public/css/slider.css')

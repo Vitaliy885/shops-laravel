@@ -12,7 +12,8 @@
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
-                                    <p>Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod tem.</p>
+                                    <p>Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod
+                                        tem.</p>
                                 </div>
                             </div>
                         </div>
@@ -26,7 +27,7 @@
                                 <li><a href="#">About</a></li>
                                 <li><a href="#"> Offers & Discounts</a></li>
                                 <li><a href="#"> Get Coupon</a></li>
-                                <li><a href="#">  Contact Us</a></li>
+                                <li><a href="#"> Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -63,7 +64,9 @@
                 <div class="col-xl-7 col-lg-8 col-md-7">
                     <div class="footer-copy-right">
                         <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i>
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                            All rights reserved | This template is made with <i class="fa fa-heart"
+                                                                                aria-hidden="true"></i>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
                 </div>
@@ -84,16 +87,20 @@
     <!-- Footer End-->
 </footer>
 <script src="{{ asset('js/jquery-2.2.4.min.js') }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 <script src="{{ asset('js/jquery.slicknav.min.js') }}"></script>
 <script src="{{ asset('js/animated.headline.js') }}"></script>
 <script src="{{ asset('js/jquery.magnific-popup.js') }}"></script>
 <script src="{{ asset('js/wow.min.js') }}"></script>
 @stack('scripts')
 <script>
-    /* 1. Proloder */
 
+    //Proloder
     $(window).on('load', function () {
         $('#preloader-active').delay(450).fadeOut('slow');
         $('body').delay(450).css({
@@ -102,21 +109,28 @@
     });
 
 
-    /* 2. slick Nav */
+    //slick Nav
     // mobile_menu
     var menu = $('ul#navigation');
-    if(menu.length){
+    if (menu.length) {
         menu.slicknav({
             prependTo: ".mobile_menu",
             closedSymbol: '+',
-            openedSymbol:'-'
+            openedSymbol: '-'
         });
-    };
+    }
 
-    (function (){
-        /* 10. WOW active */
-        new WOW().init();
-    })();
+    $(window).on('scroll', function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 245) {
+            $(".header-sticky").removeClass("sticky");
+            $(".header-sticky").removeClass("sticky-bar");
+        } else {
+            $(".header-sticky").addClass("sticky");
+            $(".header-sticky").addClass("sticky-bar");
+        }
+    });
+    new WOW().init();
 
 </script>
 
