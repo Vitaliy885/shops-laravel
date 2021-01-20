@@ -1255,3 +1255,29 @@ input:focus {
         }
     }
 }
+
+.scrollUp {
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    background-color: $btn_bg;
+    color: #ffffff;
+    border-radius: 50%;
+    line-height: 48px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: none;
+
+    &:hover {
+        color: $btn_bg;
+        border: 1px solid $btn_bg;
+        background-color: #ffffff;
+    }
+
+    &.active {
+        display: block;
+    }
+}

@@ -137,7 +137,7 @@
 
             L.marker([48.292216, 25.932923], {icon: icon})
                 .addTo(map)
-                .bindPopup('We are on the map.')
+                .bindPopup('Time Zone')
                 .openPopup();
 
     </script>

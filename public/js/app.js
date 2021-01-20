@@ -19377,7 +19377,26 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // div to top
+
+
+(function () {
+  var scrollUp = document.querySelector('.scrollUp');
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset >= 300) {
+      scrollUp.classList.add('active');
+    } else {
+      scrollUp.classList.remove('active');
+    }
+  });
+  scrollUp.addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  });
+})();
 
 /***/ }),
 

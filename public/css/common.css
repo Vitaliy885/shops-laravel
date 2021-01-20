@@ -2743,3 +2743,29 @@ input:focus {
   outline: none;
 }
 
+.scrollUp {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  background-color: #ff2020;
+  color: #ffffff;
+  border-radius: 50%;
+  line-height: 48px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: none;
+}
+
+.scrollUp:hover {
+  color: #ff2020;
+  border: 1px solid #ff2020;
+  background-color: #ffffff;
+}
+
+.scrollUp.active {
+  display: block;
+}
+
