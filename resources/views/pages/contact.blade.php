@@ -4,6 +4,10 @@
 @push('styles')
     <link rel="stylesheet" href="{{ asset('/css/contact.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/slider.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/leaflet.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/MarkerCluster.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/MarkerCluster.Default.css') }}">
 @endpush
 
 @section('content')
@@ -23,24 +27,14 @@
     </div>
     <!--? Hero Area End-->
 
-{{--    @if($errors->any())--}}
-{{--        <div class="alert alert-danger">--}}
-{{--            <ul>--}}
-{{--                @foreach($errors->all() as $key => $error)--}}
-{{--                    <li>{{ $error }}</li>--}}
-{{--                @endforeach--}}
-{{--            </ul>--}}
-{{--        </div>--}}
-{{--    @endif--}}
-
-    @include('components.messages')
     <!-- ================ contact section start ================= -->
     <section class="contact-section">
         <div class="container">
             <div class="d-none d-sm-block mb-5 pb-4">
-            <div id="map"></div>
+                <div id="map"></div>
             </div>
 
+            @include('components.messages')
             <div class="row">
                 <div class="col-12">
                     <h2 class="contact-title">Get in Touch</h2>
@@ -51,31 +45,38 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
-                                    <textarea class="form-control w-100" name="text" cols="30" rows="9" placeholder=" Enter Message"></textarea>
+                                    <textarea class="form-control w-100" name="text" cols="30" rows="9"
+                                              placeholder=" Enter Message"></textarea>
                                     @error('text')
-                                    <div class="alert alert-danger">{{ $message }}</div>
+                                    <div class="alert-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input class="form-control valid" name="name" type="text"  placeholder="Enter your Name">
+                                    <input class="form-control valid" name="name" type="text"
+                                           placeholder="Enter your Name">
                                     @error('name')
-                                    <div class="alert alert-danger">{{ $message }}</div>
+                                    <div class="alert-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input class="form-control valid" name="surname" type="text" placeholder="Enter your Surname">
+                                    <input class="form-control valid" name="surname" type="text"
+                                           placeholder="Enter your Surname">
                                     @error('surname')
-                                    <div class="alert alert-danger">{{ $message }}</div>
+                                    <div class="alert-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <input class="form-control" name="email" type="email" placeholder="Enter your Email">
+                                    <input class="form-control" name="email" type="email"
+                                           placeholder="Enter your Email">
+                                    @error('email')
+                                    <div class="alert-danger">{{ $message }}</div>
+                                    @enderror
                                 </div>
                             </div>
                         </div>
@@ -112,3 +113,32 @@
     </section>
     <!-- ================ contact section end ================= -->
 @endsection
+@push('scripts')
+    <script src="{{ asset('js/leaflet.js') }}"></script>
+    <script src="{{ asset('js/leaflet.markercluster.js') }}"></script>
+    <script>
+
+            var map = L.map('map', {
+                center: [48.292216, 25.932923],
+                zoom: 15,
+                attributionControl: false
+            });
+
+            var icon = L.icon({
+                iconUrl: '/images/store.png',
+                iconSize:     [45, 45], // size of the icon
+                iconAnchor:   [31, 64], // point of the icon which will correspond to marker's location
+                popupAnchor:  [-6, -62]
+            });
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: ''
+            }).addTo(map);
+
+            L.marker([48.292216, 25.932923], {icon: icon})
+                .addTo(map)
+                .bindPopup('We are on the map.')
+                .openPopup();
+
+    </script>
+@endpush

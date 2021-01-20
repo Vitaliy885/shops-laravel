@@ -21,6 +21,8 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "leaflet": "^1.7.1",
+        "leaflet.markercluster": "^1.4.1",
         "minifier": "^0.8.1"
     }
 }

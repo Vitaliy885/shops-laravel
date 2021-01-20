@@ -15,5 +15,10 @@
     "/js/owl.carousel.min.js": "/js/owl.carousel.min.js",
     "/js/animated.headline.js": "/js/animated.headline.js",
     "/js/jquery.magnific-popup.js": "/js/jquery.magnific-popup.js",
-    "/js/wow.min.js": "/js/wow.min.js"
+    "/js/wow.min.js": "/js/wow.min.js",
+    "/css/leaflet.css": "/css/leaflet.css",
+    "/js/leaflet.js": "/js/leaflet.js",
+    "/css/MarkerCluster.css": "/css/MarkerCluster.css",
+    "/css/MarkerCluster.Default.css": "/css/MarkerCluster.Default.css",
+    "/js/leaflet.markercluster.js": "/js/leaflet.markercluster.js"
 }

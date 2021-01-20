@@ -63,3 +63,10 @@ mix.then(() => {
     minifier.minify('public/js/app.js')
 });
 
+mix.copy('node_modules/leaflet/dist/leaflet.css', 'public/css');
+mix.copy('node_modules/leaflet/dist/leaflet.js', 'public/js');
+
+mix.copy('node_modules/leaflet.markercluster/dist/MarkerCluster.css', 'public/css');
+mix.copy('node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css', 'public/css');
+mix.copy('node_modules/leaflet.markercluster/dist/leaflet.markercluster.js', 'public/js');
+
