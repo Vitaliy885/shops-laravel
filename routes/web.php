@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.home');
 })->name('/');
+Route::get('/login', function () {
+    return view('admin.login');
+})->name('/');
 Route::get('/category', function () {
     return view('pages.category');
 })->name('category');

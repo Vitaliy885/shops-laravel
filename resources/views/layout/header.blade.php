@@ -47,15 +47,6 @@
                                     </ul>
                                 </li>
                                 <li><a href="{{ route('news') }}">News</a></li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="submenu">
-                                        <li><a href="login.html">Login</a></li>
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="elements.html">Element</a></li>
-                                        <li><a href="confirmation.html">Confirmation</a></li>
-                                        <li><a href="checkout.html">Product Checkout</a></li>
-                                    </ul>
-                                </li>
                                 <li><a href="{{ route('contact') }}">Contact</a></li>
                             </ul>
                         </nav>
@@ -68,7 +59,6 @@
                                     <span class="flaticon-search"></span>
                                 </div>
                             </li>
-                            <li> <a href="login.html"><span class="flaticon-user"></span></a></li>
                             <li><a href="cart.html"><span class="flaticon-shopping-cart"></span></a> </li>
                         </ul>
                     </div>

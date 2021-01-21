@@ -230,6 +230,7 @@
 .header-area .main-header .menu-wrapper .header-right ul {
   display: flex !important;
   justify-content: space-between;
+  margin-bottom: 0 !important;
 }
 
 .header-area .main-header .menu-wrapper .header-right .nav-search {
