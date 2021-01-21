@@ -25,6 +25,9 @@ Route::get('/contact', function () {
 Route::get('/news', function () {
     return view('pages.news');
 })->name('news');
+Route::get('/news/news-item', function () {
+    return view('pages.news-item');
+})->name('news-item');
 
 Route::post('/contact//all/{id}/update', 'ContactController@updateMessageSubmit')->name('contact-update-submit');
 Route::get('/contact/all/{id}/update', 'ContactController@updateMessage')->name('contact-update');

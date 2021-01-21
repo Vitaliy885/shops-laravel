@@ -35,15 +35,6 @@
                 transform: rotate(45deg);
             }
         }
-
-        .button-contactForm {
-            padding: 13px 40px;
-            color: $btn_bg !important;
-
-            &:hover {
-                color: #ffffff !important;
-            }
-        }
     }
 
     .media {
@@ -84,6 +75,36 @@
         position: relative;
         overflow: hidden;
         margin-top: 50px;
+    }
+}
+
+.boxed-btn {
+    background: #ff2020;
+    color: #fff;
+    display: inline-block;
+    padding: 18px 44px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid #ff2020;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background: #ffffff;
+        color: #000 !important;
+        border: 1px solid #ff2020;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.large-width {
+        width: 220px;
     }
 }
 
