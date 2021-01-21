@@ -19,6 +19,7 @@ mix.react('resources/js/app.js', 'public/js')
     .sass('resources/sass/footer.scss', 'public/css')
     .sass('resources/sass/category.scss', 'public/css')
     .sass('resources/sass/home.scss', 'public/css')
+    .sass('resources/sass/news.scss', 'public/css')
     .sass('resources/sass/product.scss', 'public/css')
     .sass('resources/sass/about.scss', 'public/css')
     .sass('resources/sass/contact.scss', 'public/css')
@@ -46,6 +47,9 @@ mix.then(() => {
 });
 mix.then(() => {
     minifier.minify('public/css/about.css')
+});
+mix.then(() => {
+    minifier.minify('public/css/news.css')
 });
 mix.then(() => {
     minifier.minify('public/css/product.css')

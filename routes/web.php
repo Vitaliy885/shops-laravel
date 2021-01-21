@@ -22,6 +22,9 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
+Route::get('/news', function () {
+    return view('pages.news');
+})->name('news');
 
 Route::post('/contact//all/{id}/update', 'ContactController@updateMessageSubmit')->name('contact-update-submit');
 Route::get('/contact/all/{id}/update', 'ContactController@updateMessage')->name('contact-update');
