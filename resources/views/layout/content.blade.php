@@ -1,4 +1,3 @@
-<main class="container">
+<main class="main">
     @yield('content')
-    {{--@include('components.sidebar')--}}
 </main>
