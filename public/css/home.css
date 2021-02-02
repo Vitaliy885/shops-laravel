@@ -152,49 +152,6 @@
   transform: scale(1);
 }
 
-.popular-items .single-popular-items .popular-img {
-  overflow: hidden;
-  border-bottom: 3px solid #ff2020;
-  margin-bottom: 19px;
-  position: relative;
-}
-
-.popular-items .single-popular-items .popular-img img {
-  width: 100%;
-}
-
-.popular-items .single-popular-items .popular-img .img-cap {
-  position: absolute;
-  bottom: -20%;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
-}
-
-.popular-items .single-popular-items .popular-img .img-cap span {
-  color: #fff;
-  background: #f81f1f;
-  padding: 20px 0;
-  display: block;
-  cursor: pointer;
-}
-
-.popular-items .single-popular-items .popular-img .favorit-items {
-  position: absolute;
-  top: 12px;
-  right: 20px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
-}
-
-.popular-items .single-popular-items .popular-img .favorit-items span {
-  color: #333333;
-  font-size: 30px;
-  cursor: pointer;
-}
-
 .popular-items .single-popular-items .popular-caption h3 a {
   color: #444444;
   font-weight: 700;
@@ -280,12 +237,6 @@
   background-color: #fff;
   border-radius: 0;
   width: 100%;
-}
-
-.single-popular-items:hover .popular-img .img-cap {
-  bottom: 0;
-  opacity: 1;
-  visibility: visible;
 }
 
 .single-popular-items:hover .popular-img .favorit-items {

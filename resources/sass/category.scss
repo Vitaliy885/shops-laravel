@@ -7,5 +7,133 @@
                 color: #635c5c;
             }
         }
+
+        .col-xl-6,
+        .col-lg-6,
+        .col-md-6,
+        .col-sm-6 {
+            padding-right: 2px;
+            padding-left: 2px;
+            padding-bottom: 4px;
+        }
+
+        .single-popular-items {
+            position: relative;
+            cursor: pointer;
+
+            .popular-img {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .portfolio-item-content {
+                position: absolute;
+                background: rgba(0, 0, 0, 0);
+                top: 5px;
+                left: 5px;
+                right: 5px;
+                bottom: 5px;
+                padding: 35px;
+                transition: all .4s;
+                transform: scale(0);
+
+                .top-row {
+                    display: block;
+                    overflow: hidden;
+                    margin-bottom: 45px;
+
+                    .porfolio-logo {
+                        float: left;
+
+                        img {
+                            max-height: 43px;
+                        }
+                    }
+                }
+
+                .description-holder {
+                    .title {
+                        display: block;
+                        font-weight: 300;
+                        font-size: 28px;
+                        text-align: left;
+                        line-height: 26px;
+                        color: #333;
+                        margin: 0 0 61px;
+                        margin-bottom: 20px;
+                        text-transform: uppercase;
+                        @media (min-width: 1200px) {
+                            color: #ffffff;
+                        }
+                    }
+
+                    .info-block {
+                        font-size: 14px;
+                        line-height: 1.29;
+                        letter-spacing: .6px;
+                        margin: 0 0 45px;
+                        font-weight: 300;
+                        max-width: 380px;
+                        height: 75px;
+                        overflow: hidden;
+                        color: #ffffff;
+                    }
+                }
+
+                .more-block {
+                    text-align: left;
+
+                    .view-site {
+                        font-size: 14px;
+                        line-height: 1;
+                        text-transform: uppercase;
+                        text-align: left;
+                        color: #ff2020;
+                        text-decoration: none;
+                        display: inline-block;
+                        position: relative;
+                        margin-bottom: 15px;
+
+                        &-en {
+                            display: inline-block;
+                        }
+
+                        .arrow {
+                            width: 16px;
+                            height: 12px;
+                            position: relative;
+                            top: 1px;
+                            right: -5px;
+                        }
+                    }
+
+                    .line-portfolio {
+                        height: 1px;
+                        background: rgba(255, 255, 255, .2);
+                        position: relative;
+
+                        &:before {
+                            position: absolute;
+                            width: 29px;
+                            height: 1px;
+                            background-color: #ff2020;
+                            content: '';
+                            display: inline-block;
+                            top: 0;
+                            transition: width 1s;
+                        }
+                    }
+                }
+            }
+
+            &:hover .portfolio-item-content {
+                @media (min-width: 1200px) {
+                    transform: scale(1);
+                    background: rgba(0, 0, 0, .95);
+                }
+            }
+        }
     }
 }

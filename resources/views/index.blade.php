@@ -22,6 +22,9 @@
 @if(Request::is('/'))
     @include('components.slider')
 @endif
+@if(!Request::is('/'))
+    @include('components.slider-area')
+@endif
 @include('layout.content')
 @include('layout.footer')
 </body>
