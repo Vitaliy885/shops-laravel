@@ -1,6 +1,6 @@
 @extends('index')
 
-@section('title') Shops @endsection
+@section('title') Projects @endsection
 @push('styles')
     <link rel="stylesheet" href="{{ asset('/css/category.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/slider.min.css') }}">
