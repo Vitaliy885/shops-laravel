@@ -6,3 +6,11 @@
   color: #635c5c;
 }
 
+.single-popular-items {
+  display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
