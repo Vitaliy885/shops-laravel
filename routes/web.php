@@ -10,9 +10,9 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('admin.login');
 })->name('admin');
-Route::get('/category', function () {
+Route::get('/projects', function () {
     return view('pages.category');
-})->name('category');
+})->name('projects');
 
 Route::get('/product', function () {
     return view('pages.product');

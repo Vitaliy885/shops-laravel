@@ -6,23 +6,6 @@
     <link rel="stylesheet" href="{{ asset('/css/themify-icons.css') }}">
 @endpush
 @section('content')
-
-    <!-- Hero Area Start-->
-    <div class="slider-area ">
-        <div class="single-slider slider-height2 d-flex align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="hero-cap text-center">
-                            <h2>Google inks pact for new 35-storey office</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--? Hero Area End-->
-
     <!--================Blog Area =================-->
     <section class="blog_area single-post-area section-padding">
         <div class="container">

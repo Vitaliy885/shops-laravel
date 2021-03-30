@@ -134,7 +134,7 @@
 
 .header-area .main-header .menu-wrapper .main-menu ul li.hot::before {
   position: absolute;
-  content: "HOT";
+  content: "Contact";
   background: #ff003c;
   color: #fff;
   text-align: center;
