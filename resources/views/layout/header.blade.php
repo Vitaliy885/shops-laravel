@@ -37,17 +37,17 @@
                     <div class="main-menu d-none d-lg-block">
                         <nav>
                             <ul id="navigation">
-                                <li><a href="{{ route('/') }}">Home</a></li>
-                                <li><a href="{{ route('projects') }}">Projects</a></li>
-                                <li><a href="{{ route('about') }}">about</a></li>
-                                <li><a href="#">Latest</a>
+                                <li><a href="{{ route('/') }}">Головна</a></li>
+                                <li><a href="{{ route('projects') }}">Каталог</a></li>
+                                <li class="sale"><a href="#">Розпродаж</a>
                                     <ul class="submenu">
-                                        <li><a href="shop.html"> Product list</a></li>
-                                        <li><a href="product_details.html"> Product Details</a></li>
+                                        <li><a href="shop.html">iPhone 12</a></li>
+                                        <li><a href="product_details.html">iPhone 12 Pro</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{ route('news') }}">News</a></li>
-                                <li class="hot"><a href="{{ route('contact') }}">Get in Touch</a></li>
+                                <li><a href="{{ route('about') }}">Про нас</a></li>
+                                <li><a href="{{ route('news') }}">Блог</a></li>
+                                <li class="hot"><a href="{{ route('contact') }}">Напиши нам</a></li>
                             </ul>
                         </nav>
                     </div>

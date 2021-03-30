@@ -45,6 +45,9 @@
         }
 
         img {
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
             @media #{$lg}{
                 height: 500px;
             }

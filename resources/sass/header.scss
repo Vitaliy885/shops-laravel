@@ -41,10 +41,7 @@
                             font-size: 16px;
                             font-family: $font_1;
                             color: #141517;
-                            font-weight: 600;
                             padding: 41px 21px;
-                            display: inline-block;
-                            text-transform: capitalize;
                             display: block;
                             transition: all ease-in-out 0.3s;
                             @media #{$lg}{
@@ -63,7 +60,30 @@
 
                             &::before {
                                 position: absolute;
-                                content: "Contact";
+                                content: "Контакти";
+                                background: #ff003c;
+                                color: #fff;
+                                text-align: center;
+                                border-radius: 8px;
+                                font-size: 10px;
+                                top: 19px;
+                                right: -13px;
+
+                                transition: all ease-in-out 0.2s;
+                                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+                                padding: 3px 8px;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                font-weight: 500;
+                            }
+                        }
+
+                        &.sale{
+                            position: relative;
+
+                            &::before {
+                                position: absolute;
+                                content: "-10%";
                                 background: #ff003c;
                                 color: #fff;
                                 text-align: center;

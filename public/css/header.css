@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*------------------- Responsive --------------------------*/
 
 /*-------------   Color variabel  --------------*/
@@ -108,12 +110,9 @@
 
 .header-area .main-header .menu-wrapper .main-menu ul li a {
   font-size: 16px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto Bold", sans-serif;
   color: #141517;
-  font-weight: 600;
   padding: 41px 21px;
-  display: inline-block;
-  text-transform: capitalize;
   display: block;
   transition: all ease-in-out 0.3s;
 }
@@ -134,7 +133,29 @@
 
 .header-area .main-header .menu-wrapper .main-menu ul li.hot::before {
   position: absolute;
-  content: "Contact";
+  content: "\41A\43E\43D\442\430\43A\442\438";
+  background: #ff003c;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 10px;
+  top: 19px;
+  right: -13px;
+  transition: all ease-in-out 0.2s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 3px 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.header-area .main-header .menu-wrapper .main-menu ul li.sale {
+  position: relative;
+}
+
+.header-area .main-header .menu-wrapper .main-menu ul li.sale::before {
+  position: absolute;
+  content: "-10%";
   background: #ff003c;
   color: #fff;
   text-align: center;

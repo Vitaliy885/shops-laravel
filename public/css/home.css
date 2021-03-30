@@ -100,7 +100,7 @@
   font-size: 48px;
   font-weight: 700;
   line-height: 1;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto Bold", sans-serif;
 }
 
 /* teammembers */
@@ -545,7 +545,7 @@
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 12px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
 }
 
 .shop-method-area .method-wrapper .single-method p {

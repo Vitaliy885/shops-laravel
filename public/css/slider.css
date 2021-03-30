@@ -118,6 +118,12 @@
   }
 }
 
+.slider-area .hero__img img {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-area .hero__img img {
     height: 500px;

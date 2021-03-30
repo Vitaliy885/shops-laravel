@@ -110,7 +110,7 @@
 
 .product_image_area .single_product_text h3 {
   font-size: 40px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto Bold", sans-serif;
 }
 
 .product_image_area .single_product_text p {
@@ -143,7 +143,7 @@
 }
 
 .product_image_area .product_attributes_area .characteristics-title {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto Bold", sans-serif;
 }
 
 .product_image_area .product_attributes_area .attribute-list {
@@ -168,7 +168,7 @@
 }
 
 .product_image_area .product_attributes_area .attribute-list .attribute__group .attribute__group-name {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   color: #122853;
@@ -239,12 +239,12 @@
 
 .subscribe_part_content h2 {
   color: #ffffff;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto Bold", sans-serif;
 }
 
 .subscribe_part_content p {
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
 }
 
 .subscribe_part .subscribe_form {

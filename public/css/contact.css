@@ -55,7 +55,7 @@
 /*Color Variables*/
 
 .contact-section .contact-title {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto Bold", sans-serif;
 }
 
 .contact-section .contact_form input,
@@ -99,7 +99,7 @@
 
 .contact-section .media .contact-info__icon {
   margin-right: 20px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto Bold", sans-serif;
 }
 
 .contact-section .media .contact-info__icon i {
