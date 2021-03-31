@@ -553,3 +553,7 @@
   color: #d3d1d1;
 }
 
+.single-popular-items .popular-img img {
+  width: 100%;
+}
+

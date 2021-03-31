@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section-tittle mb-70">
-                        <h2>New Arrivals</h2>
+                        <h2>Новинка</h2>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,8 @@
                             <img src="/images/gallery/new_product1.png" alt="">
                         </div>
                         <div class="product-caption">
-                            <h3><a href="product_details.html">Чохол-накладка Case-Mate Twinkle Twinkle Stardust для iPhone XS Max</a></h3>
+                            <h3><a href="product_details.html">Чохол-накладка Case-Mate Twinkle Twinkle Stardust для
+                                    iPhone XS Max</a></h3>
                             <span>1 129 грн</span>
                         </div>
                     </div>
@@ -37,7 +38,8 @@
                             <img src="/images/gallery/new_product2.png" alt="">
                         </div>
                         <div class="product-caption">
-                            <h3><a href="product_details.html">Захисний еко-чохол UAG Outback Bio Series Black для iPhone 12 Pro Max</a></h3>
+                            <h3><a href="product_details.html">Захисний еко-чохол UAG Outback Bio Series Black для
+                                    iPhone 12 Pro Max</a></h3>
                             <span>999 грн</span>
                         </div>
                     </div>
@@ -48,7 +50,8 @@
                             <img src="/images/gallery/new_product3.png" alt="">
                         </div>
                         <div class="product-caption">
-                            <h3><a href="product_details.html">Ультратонкий чохол Baseus Wing Case Green для iPhone 12 Pro Max</a></h3>
+                            <h3><a href="product_details.html">Ультратонкий чохол Baseus Wing Case Green для iPhone 12
+                                    Pro Max</a></h3>
                             <span>345 грн</span>
                         </div>
                     </div>
@@ -110,7 +113,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="single-popular-items mb-50 text-center">
                         <div class="popular-img">
-                            <img src="/images/gallery/popular1.png" alt="">
+                            <img src="{{ asset('/images/gallery/popular1.png') }}" alt="">
                             <div class="img-cap">
                                 <span>Add to cart</span>
                             </div>
@@ -119,15 +122,15 @@
                             </div>
                         </div>
                         <div class="popular-caption">
-                            <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
-                            <span>$ 45,743</span>
+                            <h3><a href="product_details.html">Dream Case</a></h3>
+                            <span>385 грн</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="single-popular-items mb-50 text-center">
                         <div class="popular-img">
-                            <img src="/images/gallery/popular2.png" alt="">
+                            <img src="{{ asset('/images/gallery/popular2.png') }}" alt="">
                             <div class="img-cap">
                                 <span>Add to cart</span>
                             </div>
@@ -136,15 +139,15 @@
                             </div>
                         </div>
                         <div class="popular-caption">
-                            <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
-                            <span>$ 45,743</span>
+                            <h3><a href="product_details.html">Dream Case</a></h3>
+                            <span>400 грн</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="single-popular-items mb-50 text-center">
                         <div class="popular-img">
-                            <img src="/images/gallery/popular3.png" alt="">
+                            <img src="{{ asset('/images/gallery/popular3.png') }}" alt="">
                             <div class="img-cap">
                                 <span>Add to cart</span>
                             </div>
@@ -153,15 +156,15 @@
                             </div>
                         </div>
                         <div class="popular-caption">
-                            <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
-                            <span>$ 45,743</span>
+                            <h3><a href="product_details.html">Dream Case</a></h3>
+                            <span>385 грн</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="single-popular-items mb-50 text-center">
                         <div class="popular-img">
-                            <img src="/images/gallery/popular4.png" alt="">
+                            <img src="{{ asset('/images/gallery/popular4.png') }}" alt="">
                             <div class="img-cap">
                                 <span>Add to cart</span>
                             </div>
@@ -170,15 +173,15 @@
                             </div>
                         </div>
                         <div class="popular-caption">
-                            <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
-                            <span>$ 45,743</span>
+                            <h3><a href="product_details.html">Dream Case</a></h3>
+                            <span>399 грн</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="single-popular-items mb-50 text-center">
                         <div class="popular-img">
-                            <img src="/images/gallery/popular5.png" alt="">
+                            <img src="{{asset('/images/gallery/popular5.png')}}" alt="">
                             <div class="img-cap">
                                 <span>Add to cart</span>
                             </div>
@@ -187,15 +190,15 @@
                             </div>
                         </div>
                         <div class="popular-caption">
-                            <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
-                            <span>$ 45,743</span>
+                            <h3><a href="product_details.html">Dream Case</a></h3>
+                            <span>380 грн</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="single-popular-items mb-50 text-center">
                         <div class="popular-img">
-                            <img src="/images/gallery/popular6.png" alt="">
+                            <img src="{{ asset('/images/gallery/popular6.png') }}" alt="">
                             <div class="img-cap">
                                 <span>Add to cart</span>
                             </div>
@@ -204,8 +207,8 @@
                             </div>
                         </div>
                         <div class="popular-caption">
-                            <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
-                            <span>$ 45,743</span>
+                            <h3><a href="product_details.html">Dream Case</a></h3>
+                            <span>385 грн</span>
                         </div>
                     </div>
                 </div>
@@ -213,7 +216,7 @@
             <!-- Button -->
             <div class="row justify-content-center">
                 <div class="room-btn pt-70">
-                    <a href="catagori.html" class="btn view-btn1">View More Products</a>
+                    <a href="catagori.html" class="btn view-btn1">Переглянути всі</a>
                 </div>
             </div>
         </div>

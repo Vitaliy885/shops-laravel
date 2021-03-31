@@ -441,28 +441,44 @@
 }
 
 // shop-method-area
-.shop-method-area{
-    .method-wrapper{
+.shop-method-area {
+    .method-wrapper {
         background: #ea0000;
-        .single-method{
+
+        .single-method {
             padding: 43px 20px 0 45px;
-            i{
+
+            i {
                 font-size: 40px;
-                color:#ffff;
+                color: #ffff;
                 margin-bottom: 25px;
                 display: block;
             }
-            h6{
-                color:#fff;
+
+            h6 {
+                color: #fff;
                 font-size: 20px;
                 font-weight: 700;
                 line-height: 1.2;
                 margin-bottom: 12px;
                 font-family: $font_2;
             }
-            p{
+
+            p {
                 font-size: 16px;
-                color:#d3d1d1;
+                color: #d3d1d1;
+            }
+        }
+    }
+}
+
+.single {
+    &-popular {
+        &-items {
+            .popular-img {
+                img {
+                    width: 100%;
+                }
             }
         }
     }
